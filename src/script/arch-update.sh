@@ -246,13 +246,13 @@ check() {
 
 	if [ "${update_number}" -ne 0 ]; then
 		icon_updates_available
-		if [ -n "${notif}" ]; then
-			if [ "${update_number}" -eq 1 ]; then
-				notify-send -i /usr/share/icons/arch-update/arch-update_updates-available.svg "Arch Update" "${update_number} update available"
-			else
-				notify-send -i /usr/share/icons/arch-update/arch-update_updates-available.svg "Arch Update" "${update_number} updates available"
-			fi
-		fi
+#		if [ -n "${notif}" ]; then
+#			if [ "${update_number}" -eq 1 ]; then
+#				notify-send -i /usr/share/icons/arch-update/arch-update_updates-available.svg "Arch Update" "${update_number} update available"
+#			else
+#				notify-send -i /usr/share/icons/arch-update/arch-update_updates-available.svg "Arch Update" "${update_number} updates available"
+#			fi
+		#fi
 	else
 		icon_up_to_date
 	fi
